@@ -49,4 +49,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/app:${{ needs.get_image.outputs.tag }}
+          tags: ghcr.io/RalonsoS/publish-packages/app:${{ needs.get_image.outputs.tag }}
