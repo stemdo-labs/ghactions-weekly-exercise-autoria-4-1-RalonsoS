@@ -22,9 +22,6 @@ runs:
       id: get_image_tag
       shell: bash
       run: | 
-        version=$(jq -r .version package.json)
-        if [[ "${{ inputs.target }}" == "dev" ]]; then
-          version="${version}-snapshot"
-        fi
+        version=$(date '+%Y%m%d%H%M%S')
         echo "version=${version}" >> "$GITHUB_OUTPUT"
         echo $GITHUB_OUTPUT
