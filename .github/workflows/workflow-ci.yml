@@ -48,4 +48,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ needs.get_image.outputs.tag }}
+          tags: ${{ steps.meta.outputs.tags }}
