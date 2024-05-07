@@ -7,7 +7,6 @@ on:
         type: string 
         required: true
  
-
 jobs:
   get_image:
     runs-on: ubuntu-latest
