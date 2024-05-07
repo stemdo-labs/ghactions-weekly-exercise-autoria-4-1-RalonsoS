@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/RalonsoS/publish-packages/game
+          images: ghcr.io/stemdo-labs/publish-packages/app
           tags: type=sha
       - name: Login to GHCR
         uses: docker/login-action@v3
